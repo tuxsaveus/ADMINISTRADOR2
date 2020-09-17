@@ -62,11 +62,5 @@
 @stop
 
 @section('js')
-    <script>
-        Swal.fire(
-            'Good job!',
-            'You clicked the button!',
-            'success'
-        )
-    </script>
+
 @stop
