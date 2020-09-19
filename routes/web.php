@@ -19,4 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('login/{driver}', 'Auth\LoginController@redirecToProvider');
+Route::get('login/{driver}/callback', 'Auth\LoginController@handleProviderCallback');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
